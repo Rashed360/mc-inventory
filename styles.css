@@ -1,0 +1,93 @@
+/* ---- Common Styles : start ---- */
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;1,700&display=swap');
+
+* {
+    font-family: 'Anonymous Pro', monospace;
+    user-select: none;
+}
+body {
+    background-color: #12380F;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.ml-1 { margin-left: 5px;}
+.ml-2 { margin-left: 10px;}
+.mr-1 { margin-left: 5px;}
+.mr-2 { margin-left: 10px;}
+/* ---- Common Styles : end ---- */
+
+/* ---- Main : start ---- */
+.window {
+    width: 800px;
+    height: 600px;
+    background: #C6C6C6;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: inset 3px 3px 0px 1px rgba(255, 255, 255, 0.5), inset -3px -3px 0px 1px rgba(0, 0, 0, 0.5);
+}
+.title {
+    margin: 25px;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: #505050;
+}
+.container {
+    margin: 25px;
+    display: flex;
+}
+.slot {
+    width: 50px;
+    height: 50px;
+    background: #8B8B8B;
+    box-shadow: inset 1px 1px 0px 1px rgba(0, 0, 0, 0.5), inset -1px -1px 0px 1px #FFFFFF;
+    position: relative;
+    /* overflow: hidden; */
+}
+.draggable > img {
+    width: 47px;
+    height: 47px;
+}
+.draggable > small {
+    color: #FFFFFF;
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    right: 3px;
+    bottom: 1px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+    text-shadow: 1px 1px 0px #000000;
+}
+.draging {
+    cursor: move;
+}
+/* ---- Main : end ---- */
+
+/* ---- button : start ---- */
+.btn {
+    color: #FFFFFF;
+    font-size: 24px;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 5px;
+    background: #505050;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: inset -3px -6px 0px 1px rgba(24, 24, 24, 0.5), inset 4px 4px 0px rgba(197, 197, 197, 0.5);
+}
+.btn:hover {
+    background: #3F3F3F;
+    cursor: pointer;
+}
+.btn:active {
+    color: #CBCBCB;
+    background: #3F3F3F;
+    box-shadow: inset 4px 4px 0px rgba(24, 24, 24, 0.5), inset -3px -6px 0px 1px rgba(197, 197, 197, 0.5);
+}
+/* ---- button : end ---- */
